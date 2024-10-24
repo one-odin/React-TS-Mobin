@@ -1,0 +1,50 @@
+.breadcrumb {
+  display: inline-block;
+  position: relative;
+  margin-left: 1.6rem;
+  padding: 0.7rem 1.1rem 0.6rem;
+  color: #9ab7d9;
+  background-color: #e7eff7;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.breadcrumb + .breadcrumb:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-width: 1.3rem 1.3rem 1.4rem 0rem;
+  border-style: solid;
+  border-color: #e7eff7 transparent #e7eff7 #e7eff7;
+}
+
+.breadcrumb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  border-width: 1.3rem 1.3rem 1.4rem 0rem;
+  border-style: solid;
+  border-color: transparent #e7eff7 transparent transparent;
+}
+
+.icon {
+  width: 19px;
+  height: 19px;
+  margin-left: 0.5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #9ab7d9;
+}
+
+.breadcrumb .active {
+  color: #1d4ed8 !important
+}
+
+.breadcrumb .active .icon{
+  background-color: #1d4ed8;
+}

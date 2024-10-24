@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-display: swap;
+  font-family: iranyekanBakh;
+  font-weight: 600;
+  src: url(assets/fonts/YekanBakh/Yekan-Bakh-FaNum-Medium.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: iranyekanBakh;
+  font-weight: 700;
+  src: url(assets/fonts/YekanBakh/Yekan-Bakh-FaNum-Bold.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: iranyekanBakh;
+  font-weight: 800;
+  src: url(assets/fonts/YekanBakh/Yekan-Bakh-FaNum-Heavy.woff) format("woff");
+}
+
+body {
+  font-family: iranyekanBakh;
+  font-weight: 700;
+}
+
+.primary-font {
+  font-family: iranyekanBakh;
+}
+
+/* Style for Chrome, Safari and Opera */  
+::-webkit-scrollbar {  
+  width: 5px; /* Width of the scrollbar */  
+}  
+
+::-webkit-scrollbar-track {  
+  background: transparent; /* Background of the scrollbar track */
+}  
+
+::-webkit-scrollbar-thumb {  
+  background: #c9c9c9; /* Color of the scrollbar handle */  
+  border-radius: 80px; /* Rounded corners for the scrollbar handle */
+}  
+
+::-webkit-scrollbar-thumb:hover {  
+  background: #b3b3b3; /* Color on hover */  
+}  
+
+/* Style for Firefox */  
+.scrollable {  
+  scrollbar-width: thin; /* Options: auto | thin */  
+  scrollbar-color: #888 #f1f1f1; /* scrollbar handle & track */  
+}  
