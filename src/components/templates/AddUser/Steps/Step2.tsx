@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ValidateField from "../ValidateField/validateField";
+import ValidateField from "../ValidateField/ValidateField";
 import Tooltip from "../../../modules/Tooltip/Tooltip";
 import Button from "../../../modules/Button/Button";
 import DownloadSampleFile from "../DownloadSampleFile/DownloadSampleFile";
