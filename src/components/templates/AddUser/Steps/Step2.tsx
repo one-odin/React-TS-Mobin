@@ -16,15 +16,23 @@ type Step2Props = {
 const Step2: FC<Step2Props> = ({ data, setData, setStep }) => {
   const handleDeleteRow = (index: number) => {
     setData(data.filter((_, idx) => idx !== index));
+    // if length of the data was 0, showing error message and redirect to step1
+    if (data.length === 1) {
+      showToastError("موردی برای نمایش وجود ندارد. فایل مدنظر را بارگزاری نمایید");
+      setTimeout(() => {
+        setStep(1);
+      }, 2000);
+    }
   };
 
   const handleDeleteInvalidRows = () => {
     const validRows = data.filter((row) => ["name", "email", "mobile", "country", "volume"].every((field) => ValidateField(field, row[field as keyof UserData]) === true));
+    // if length of the validRows was 0, showing error message and redirect to step1
     if (validRows.length === 0) {
+      showToastError("همه اطلاعات نامعتبر است و موردی برای نمایش وجود ندارد. فایل اصلاح شده را بارگزاری نمایید");
       setTimeout(() => {
-        showToastError("همه اطلاعات نامعتبر است و موردی برای نمایش وجود ندارد. فایل اصلاح شده را بارگزاری نمایید");
         setStep(1);
-      }, 1000);
+      }, 2000);
     }
     setData(validRows);
   };
