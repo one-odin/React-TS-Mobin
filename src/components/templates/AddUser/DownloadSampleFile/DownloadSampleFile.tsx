@@ -6,7 +6,7 @@ const DownloadSampleFile = (): JSX.Element => {
   return (
     <div className="flex justify-between items-center mb-3">
       <p>لطفا قالب نمونه اکسل را دانلود و پس از تکمیل آن را بارگزاری کنید.</p>
-      <Link to="/src/assets/users-excel-file.xlsx" target="_blank">
+      <Link to="/users-excel-file.xlsx" target="_blank">
         <Button variant="primaryOutline" size="medium" icon={true}>
           <HiOutlineDocumentDownload className="ml-2 size-5 -mt-2" />
           <span>دانلود قالب آماده اکسل</span>
